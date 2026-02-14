@@ -1,58 +1,157 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>My Website</title>
+  <title>SiteForge – Build Your Next Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Short description of my website.">
+  <meta name="description" content="A general-purpose hub for planning and launching websites.">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <header class="site-header">
-    <div class="container">
+    <div class="container header-inner">
       <div class="branding">
-        <a href="index.html" class="site-title">My Website</a>
-        <p class="site-tagline">A general-purpose static site.</p>
+        <a href="index.html" class="logo-mark">SF</a>
+        <div class="brand-text">
+          <a href="index.html" class="site-title">SiteForge</a>
+          <p class="site-tagline">A tiny workshop for building better websites.</p>
+        </div>
       </div>
       <nav class="site-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <a href="#plans">Plans</a>
+        <a href="#checklist">Checklist</a>
+        <a href="#patterns">Patterns</a>
+        <a href="#resources">Resources</a>
       </nav>
     </div>
   </header>
 
   <main class="site-main">
-    <div class="container">
-      <section class="hero">
-        <h1>Welcome to My Website</h1>
-        <p>This is a simple, general-purpose static site skeleton you can customize later.</p>
-        <a class="button" href="#features">See Features</a>
-      </section>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Design, plan, and launch your next website from one simple page.</h1>
+          <p>
+            Use this hub as a starting point for any site: track ideas, pick a layout,
+            and collect resources. Then swap the content for your own project.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#checklist">Start with a checklist</a>
+            <a class="button ghost" href="#patterns">Explore layout patterns</a>
+          </div>
+        </div>
+        <aside class="hero-panel">
+          <h2>Quick project snapshot</h2>
+          <ul class="meta-list">
+            <li><span>Project name</span><strong>My Next Website</strong></li>
+            <li><span>Main goal</span><strong>Explain / Sell / Show</strong></li>
+            <li><span>Target audience</span><strong>Visitors you define</strong></li>
+            <li><span>Status</span><strong>Drafting content</strong></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
 
-      <section id="features" class="features">
-        <h2>Features</h2>
-        <div class="feature-grid">
-          <article class="feature">
-            <h3>Clean structure</h3>
-            <p>Semantic HTML with header, main, and footer, plus a container layout.</p>
+    <section id="plans" class="section alt">
+      <div class="container">
+        <h2>Planning lanes</h2>
+        <p class="section-intro">
+          Organize your work into lanes. Rename or repurpose them as your site grows.
+        </p>
+        <div class="lane-grid">
+          <article class="lane">
+            <h3>Content lane</h3>
+            <ul>
+              <li>List your pages and what each must answer.</li>
+              <li>Draft headlines and key messages.</li>
+              <li>Note any media you need (images, video, diagrams).</li>
+            </ul>
           </article>
-          <article class="feature">
-            <h3>Easy to extend</h3>
-            <p>Add pages, sections, or components without changing the core layout.</p>
+          <article class="lane">
+            <h3>Design lane</h3>
+            <ul>
+              <li>Pick color tokens and typography.</li>
+              <li>Sketch desktop and mobile layouts.</li>
+              <li>Decide on navigation and footer structure.</li>
+            </ul>
           </article>
-          <article class="feature">
-            <h3>GitHub-ready</h3>
-            <p>Uses relative paths for assets so it works on project or user pages.</p>
+          <article class="lane">
+            <h3>Technical lane</h3>
+            <ul>
+              <li>Choose hosting (GitHub Pages, etc.).</li>
+              <li>Plan build tools, if any.</li>
+              <li>List integrations (forms, analytics, APIs).</li>
+            </ul>
           </article>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+
+    <section id="checklist" class="section">
+      <div class="container">
+        <h2>Launch checklist</h2>
+        <p class="section-intro">
+          Use this as a pre‑flight list before you point traffic at any site.
+        </p>
+        <div class="checklist">
+          <label><input type="checkbox"> All pages load without bad errors.</label>
+          <label><input type="checkbox"> Navigation works on desktop and mobile.</label>
+          <label><input type="checkbox"> Titles and descriptions are unique and meaningful.</label>
+          <label><input type="checkbox"> Links use HTTPS and open as expected.</label>
+          <label><input type="checkbox"> Layout holds up on small screens.</label>
+          <label><input type="checkbox"> 404 page exists and links back home.</label>
+        </div>
+      </div>
+    </section>
+
+    <section id="patterns" class="section alt">
+      <div class="container">
+        <h2>Simple layout patterns</h2>
+        <p class="section-intro">
+          Swap these sections in or out as you design different pages.
+        </p>
+        <div class="pattern-grid">
+          <article class="pattern">
+            <h3>Landing page</h3>
+            <p>Hero + key benefits + social proof + clear call‑to‑action.</p>
+          </article>
+          <article class="pattern">
+            <h3>Docs / knowledge</h3>
+            <p>Sidebar navigation + content pane + search or quick links.</p>
+          </article>
+          <article class="pattern">
+            <h3>Portfolio</h3>
+            <p>Filterable grid of work + detail pages for case studies.</p>
+          </article>
+          <article class="pattern">
+            <h3>Blog</h3>
+            <p>Chronological list of posts + categories or tags.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources" class="section">
+      <div class="container">
+        <h2>Resource placeholders</h2>
+        <p class="section-intro">
+          Replace these with your favorite tools, libraries, or design systems.
+        </p>
+        <ul class="resource-list">
+          <li><strong>Design system:</strong> Your chosen component library or style guide.</li>
+          <li><strong>Icon set:</strong> The icon library you standardize on.</li>
+          <li><strong>Typography:</strong> Font pairing and sizing scale.</li>
+          <li><strong>Testing stack:</strong> Devices, browsers, and tools you use to QA.</li>
+        </ul>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> SiteForge. Built on static HTML, CSS, and a little JS.</p>
+      <p class="footer-note">Edit this page to turn it into your next project’s home base.</p>
     </div>
   </footer>
 
